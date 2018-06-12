@@ -10,6 +10,7 @@ GET     /listaddress                                          controllers.Person
 GET     /insertaddress/:personid/:address/:city               controllers.PersonController.execInsertAddress(personid: Int, address: String, city: String)
 GET     /insertperson/:name/:age                              controllers.PersonController.execInsertPerson(name: String, age: Int)
 GET     /viewinnerjoin                                        controllers.PersonController.execInnerJoin
+GET    /viewleftjoin                                          controllers.PersonController.execLeftJoin
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
